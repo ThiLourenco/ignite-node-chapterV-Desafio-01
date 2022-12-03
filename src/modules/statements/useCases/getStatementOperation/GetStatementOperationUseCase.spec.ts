@@ -36,7 +36,7 @@ describe('Get Statement Operation', () => {
     userId = (user?.id) ? user.id : 'not-valid-id'
 
     const { id } = await inMemoryStatementsRepository.create({
-      user_id: userId,
+      user_id: newUser,
       amount: 100,
       description: 'Deposit Sample',
       type: 'deposit' as OperationType
